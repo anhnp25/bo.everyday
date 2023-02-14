@@ -2,7 +2,8 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        clifford: "#da373d",
+        "bo-500": "#ee8897",
+        "bo-700": "#ee8897",
       },
     },
   },

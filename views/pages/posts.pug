@@ -17,16 +17,18 @@ append js
     script(src="/js/editor.js") 
     script.
         const listImg = !{listImg};
-        const modalImgBtnId = "galleries";
+        const GITHUB_IMAGE_PATH = "!{GITHUB_IMAGE_PATH}";
+        const modalImgId = "galleries";
         const okImgBtnId = "okImgBtnId";
-        const cancelImgBtnId = "cancelImgBtnId";
     script(src="/js/posts.js") 
 
 append content 
     h1.text-3xl.font-bold.my-3 New Post
 
     div
-        +modal(modalImgBtnId, okImgBtnId, cancelImgBtnId)
+
+    div
+        +modal("galleries", "", "okImgBtnId")
             .flex.flex-wrap 
                 each val in JSON.parse(listImg)
                     div(class="galleries-image w-1/2 sm:w-1/3 md:w-1/4 p-2 cursor-pointer" title="/" + val)

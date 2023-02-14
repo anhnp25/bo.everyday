@@ -8,11 +8,11 @@ function startEditor(editor_id, customFn = []) {
     autofocus: true,
     spellChecker: false,
     autoDownloadFontAwesome: true,
-    autosave: {
-      enabled: true,
-      uniqueId: "editor-autosave",
-      delay: 1000,
-    },
+    // autosave: {
+    //   enabled: true,
+    //   uniqueId: "editor-autosave",
+    //   delay: 1000,
+    // },
     insertText: ["![](http://", ")"],
     toolbar: [
       "bold",

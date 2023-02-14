@@ -2,3 +2,7 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.jquery-modal {
+  z-index: 1000 !important;
+}
